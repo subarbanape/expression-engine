@@ -1,0 +1,5 @@
+C:\vinu\personal\github\expression-eng\Expression.Engine\obj\Debug\netcoreapp3.1\Expression.Engine.csproj.AssemblyReference.cache
+C:\vinu\personal\github\expression-eng\Expression.Engine\obj\Debug\netcoreapp3.1\Expression.Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\vinu\personal\github\expression-eng\Expression.Engine\obj\Debug\netcoreapp3.1\Expression.Engine.AssemblyInfoInputs.cache
+C:\vinu\personal\github\expression-eng\Expression.Engine\obj\Debug\netcoreapp3.1\Expression.Engine.AssemblyInfo.cs
+C:\vinu\personal\github\expression-eng\Expression.Engine\obj\Debug\netcoreapp3.1\Expression.Engine.csproj.CoreCompileInputs.cache

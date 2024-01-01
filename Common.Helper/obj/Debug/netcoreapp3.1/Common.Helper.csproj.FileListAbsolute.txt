@@ -1,0 +1,13 @@
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.csproj.AssemblyReference.cache
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.GeneratedMSBuildEditorConfig.editorconfig
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.AssemblyInfoInputs.cache
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.AssemblyInfo.cs
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.csproj.CoreCompileInputs.cache
+C:\vinu\personal\github\expression-eng\Common.Helper\bin\Debug\netcoreapp3.1\Common.Helper.deps.json
+C:\vinu\personal\github\expression-eng\Common.Helper\bin\Debug\netcoreapp3.1\Common.Helper.dll
+C:\vinu\personal\github\expression-eng\Common.Helper\bin\Debug\netcoreapp3.1\Common.Helper.pdb
+C:\vinu\personal\github\expression-eng\Common.Helper\bin\Debug\netcoreapp3.1\Common.Infrastructure.dll
+C:\vinu\personal\github\expression-eng\Common.Helper\bin\Debug\netcoreapp3.1\Common.Infrastructure.pdb
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.csproj.CopyComplete
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.dll
+C:\vinu\personal\github\expression-eng\Common.Helper\obj\Debug\netcoreapp3.1\Common.Helper.pdb

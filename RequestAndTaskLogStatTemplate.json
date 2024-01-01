@@ -1,0 +1,426 @@
+{
+  "RequestAndTaskLogStatTemplate": {
+    "BlacklistUsersForTaskAssignment": [
+      "user.name"
+    ],
+    "RequestAndTaskLogEvents": [
+      {
+        "Event": "RequestSyncEvent",
+        "Actions": [],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTaskOneLineSummaryForAllTasks",
+        ]
+      },
+      {
+        "Event": "WorkflowCreatedEvent",
+        "Actions": [
+          {
+            "Name": "Initiate",
+            "Expression": "{User} initiated the request on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData",
+          "CalculateTimeElapseForExecutivesAndCFOReview"
+        ]
+      },
+      {
+        "Event": "WorkflowResumedEvent",
+        "Actions": [
+          {
+            "Name": "Resume",
+            "Expression": "Request resumed on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectFinanceData"
+        ]
+      },
+      {
+        "Event": "WorkflowCancelledEvent",
+        "Actions": [
+          {
+            "Name": "Cancel",
+            "Expression": "Request cancelled on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData"
+        ]
+      },
+      {
+        "Event": "WorkflowSuspendedEvent",
+        "Actions": [
+          {
+            "Name": "Suspend",
+            "Expression": "Request suspended on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData"
+        ]
+      },
+      {
+        "Event": "WorkflowCompleteEvent",
+        "Actions": [
+          {
+            "Name": "Complete",
+            "Expression": "Request completed on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData"
+        ]
+      },
+      {
+        "Event": "WorkflowTaskAssignedEvent",
+        "Actions": [
+          {
+            "Name": "TaskAssign",
+            "Expression": "Task initially assigned to {User} on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData",
+          "CalculateTaskOneLineSummaryForAllTasks"
+        ]
+      },
+      {
+        "Event": "WorkflowTaskReassignedEvent",
+        "Actions": [
+          {
+            "Name": "TaskReassign",
+            "Expression": "Task reassigned from {FromUser} to {User} on {Date}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectFinanceData",
+          "CalculateTaskOneLineSummaryForAllTasks"
+        ]
+      },
+      {
+        "Event": "WorkflowTaskCancelledEvent",
+        "Actions": [
+          {
+            "Name": "TaskCancel",
+            "Expression": "Task cancelled on {Date} for {User}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData",
+          "CalculateTaskOneLineSummaryForAllTasks"
+        ]
+      },
+      {
+        "Event": "WorkflowTaskCompletedEvent",
+        "Actions": [
+          {
+            "Name": "TaskComplete",
+            "Expression": "Task assigned on {TaskAssignedDate} and completed on {Date} by {User}"
+          }
+        ],
+        "OnEventProcessed": [
+          "CancelTasksIfAny",
+          "CompleteTasksIfAny",
+          "CalculateRequestOneLineSummary",
+          "CalculateRequestApprovalStatus",
+          "CalculateRequestPercentageComplete",
+          "CalculateTimeElapseForExecutivesAndCFOReview",
+          "CalculateTimeElapseForCollectATCAmount",
+          "CalculateTimeElapseForCollectFinanceData",
+          "CalculateTaskOneLineSummaryForAllTasks"
+        ]
+      }
+    ],
+    "RequestAndTaskStatCommands": [
+      {
+        "Command": "CalculateTaskOneLineSummaryForAllTasks",
+        "Actions": [
+          {
+            "Name": "OneLineSummary",
+            "Expression": [
+              {
+                "Criteria": "MACRO(GetTaskStatus, {TaskName}, {RequestId}) is Cancelled or Removed",
+                "Expression": "Task {TaskName} is assigned to {User} on {TaskAssignedDate} and cancelled on {TaskCancelledDate}. Overall time taken: MACRO(CalculateTaskDuration, {TaskName}, {RequestId})"
+              },
+              { "ConditionPipe": "Any" },
+              {
+                "Criteria": "MACRO(GetTaskStatus, {TaskName}, {RequestId}) is Assigned or New or Overdue",
+                "Expression": "Task {TaskName} is assigned to {User} on {TaskAssignedDate}. Time elapsed: MACRO(CalculateTaskDuration, {TaskName}, {RequestId})"
+              },
+              { "ConditionPipe": "Any" },
+              {
+                "Criteria": "MACRO(GetTaskStatus, {TaskName}, {RequestId}) is Complete",
+                 "Expression": "Task {TaskName} completed on {TaskCompletedDate} by {User}. Overall time taken: MACRO(CalculateTaskDuration, {TaskName}, {RequestId})"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Command": "CalculateRequestOneLineSummary",
+        "Actions": [
+          {
+            "Name": "OneLineSummary",
+            "Expression": [
+              {
+                "Expression": "Request initiated by {Initiator} on {Date}. Time elapsed: MACRO(CalculateRequestDuration, {RequestId})",
+                "Criteria": "MACRO(GetRecentRequestEvent, {RequestId}) is Initiate or Resume"
+              },
+              { "ConditionPipe": "Any" },
+              {
+                "Expression": "Request initiated by {Initiator} is suspended on {Date}. Time elapsed: MACRO(CalculateRequestDuration, {RequestId})",
+                "Criteria": "MACRO(GetRecentRequestEvent, {RequestId}) is Suspend"
+              },
+              { "ConditionPipe": "Any" },
+              {
+                "Expression": "Request initiated by {Initiator} is cancelled on {Date}. Time taken: MACRO(CalculateRequestDuration, {RequestId})",
+                "Criteria": "MACRO(GetRecentRequestEvent, {RequestId}) is Cancel"
+              },
+              { "ConditionPipe": "Any" },
+              {
+                "Expression": "Request initiated by {Initiator} is completed on {Date}. Time taken: MACRO(CalculateRequestDuration, {RequestId})",
+                "Criteria": "MACRO(GetRecentRequestEvent, {RequestId}) is Complete"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Command": "CalculateTimeElapseForCollectFinanceData",
+        "Actions": [
+          {
+            "Name": "TimeElapseForCollectFinanceData",
+            "Expression": [
+              {
+                "Expression": "MACRO(CalculateTasksDuration, {Tasks:[{Task:Finance Review Product Management Response}, {Task:Request Additional Info (Product Management)}, {Task:Finance Review CO Response}, {Task:Request Additional Info (CO)}, {Task:Finance Review OSP Response}, {Task:Request Additional Info (OSP)}, {Task:Collect Finance Data}, {Task:Request Additional Info (Sales/Marketing)}, {Task:Finance Review Sales/Marketing Response}]}, {RequestId})",
+                "Criteria": "None"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Command": "CalculateTimeElapseForCollectATCAmount",
+        "Actions": [
+          {
+            "Name": "TimeElapseForCollectATCAmount",
+            "Expression": [
+              {
+                "Expression": "MACRO(CalculateTasksDuration, {Tasks:[{Task:Collect ATC Data}, {Task:Confirm ATC Amount Received}]}, {RequestId})",
+                "Criteria": "MACRO(GetRequestTableColumnValue, {Column:DeveloperAgreesToPayATCAmount}, {RequestId}) is true"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Command": "CalculateTimeElapseForExecutivesAndCFOReview",
+        "Actions": [
+          {
+            "Name": "TimeElapseForExecutivesAndCFOReview",
+            "Expression": [
+              {
+                "Expression": "MACRO(CalculateTasksDuration, {Tasks:[{Task:Update Feedback From Executives Review}, {Task:Update Feedback From CFO Review}]}, {RequestId})",
+                "Criteria": "None"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Command": "CalculateRequestPercentageComplete",
+        "Actions": [
+          {
+            "Name": "RequestPercentageComplete",
+            "Expression": [
+              {
+                "Expression": "MACRO(CalculateRequestPercentageComplete, {RequestId})",
+                "Criteria": "None"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Command": "CalculateRequestApprovalStatus",
+        "Actions": [
+          {
+            "Name": "RequestApprovalStatus",
+            "Expression": [
+              {
+                "Expression": "MACRO(CalculateRequestApprovalStatus, {RequestId})",
+                "Criteria": "None"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "RequestStatusTemplate": [
+      {
+        "TaskName": [ "Submit Request" ],
+        "PercentageComplete" :  "10",
+        "Expression": [
+          {
+            "Expression": "Requestor has saved the request in the draft mode and not submitted yet.",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [ "Collect Sales/Marketing Data", "Collect OSP Data", "Collect CO Data" ],
+        "PercentageComplete" :  "20",
+        "Expression": [
+          {
+            //"Expression": "In Progress - MACRO(GetActiveTasksInCollection, {Tasks:[{Task:Collect Sales/Marketing Data}, {Task:Collect OSP Data}, {Task:Collect CO Data}]}, {RequestId})",
+            "Expression": "In Progress - MACRO(GetActiveTasksInCollection, {RequestId})",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [ "Collect Product Management Data" ],
+        "PercentageComplete" :  "30",
+        "Expression": [
+          {
+            "Expression": "In Progress - Collect Product Management Data.",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [
+          "Collect Finance Data",
+          "Request Additional Info (Sales/Marketing)",
+          "Request Additional Info (OSP)",
+          "Request Additional Info (CO)",
+          "Request Additional Info (Product Management)",
+          "Finance Review Sales/Marketing Response",
+          "Finance Review OSP Response",
+          "Finance Review CO Response",
+          "Finance Review Product Management Response"
+        ],
+        "PercentageComplete" :  "50",
+        "Expression": [
+          {
+             //"Expression": "In Progress - Collect Finance Data. Current Active Tasks - MACRO(GetActiveTasksInCollection, {Tasks:[{Task:Collect Finance Data}, {Task:Request Additional Info (Sales/Marketing)}, {Task:Request Additional Info (OSP)}, {Task:Request Additional Info (CO)}, {Task:Request Additional Info (Product Management)}, {Task:Finance Review Sales/Marketing Response}, {Task:Finance Review OSP Response}, {Task:Finance Review CO Response}, {Task:Finance Review Product Management Response}]}, {RequestId})",
+            "Expression": "In Progress - Collect Finance Data. Current Active Tasks - MACRO(GetActiveTasksInCollection, {RequestId})",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [
+          "Update Feedback From Executives Review"
+        ],
+        "PercentageComplete" :  "60",
+        "Expression": [
+          {
+            "Expression": "In Progress - Update Feedback From Executives Review.",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [
+          "Update Feedback From CFO Review"
+        ],
+        "PercentageComplete": "70",
+        "Expression": [
+          {
+            "Expression": "In Progress - Update Feedback From CFO Review.",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [
+          "Collect ATC Data",
+          "Confirm ATC Amount Received"
+        ],
+        "PercentageComplete": "80",
+        "Expression": [
+          {
+           // "Expression": "In Progress - MACRO(GetActiveTasksInCollection, {Tasks:[{Task:Collect ATC Data}, {Task:Confirm ATC Amount Received}]}, {RequestId}).",
+            "Expression": "In Progress - MACRO(GetActiveTasksInCollection, {RequestId}).",
+            "Criteria": "None"
+          }
+        ]
+      },
+      {
+        "TaskName": [
+          "Attach Final Biz Case PDF"
+        ],
+        "PercentageComplete": "90",
+        "Expression": [
+          {
+            "Expression": "In Progress - Attach Final Biz Case PDF.",
+            "Criteria": "None"
+          }
+        ]
+      }
+    ]
+  }
+}

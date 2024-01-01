@@ -1,0 +1,10 @@
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.csproj.AssemblyReference.cache
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.AssemblyInfoInputs.cache
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.AssemblyInfo.cs
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.csproj.CoreCompileInputs.cache
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\bin\Debug\netcoreapp3.1\Common.Infrastructure.deps.json
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\bin\Debug\netcoreapp3.1\Common.Infrastructure.dll
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\bin\Debug\netcoreapp3.1\Common.Infrastructure.pdb
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.dll
+C:\vinu\personal\github\expression-eng\Common.Infrastructure\obj\Debug\netcoreapp3.1\Common.Infrastructure.pdb
