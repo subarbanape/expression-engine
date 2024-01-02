@@ -56,7 +56,7 @@ Runnable modules that uses above interfaces:
           - IExpressionParser further parses the instructions/conditions and helps decide to evaluate the overall instruction.
           - ex: "MACRO(GetTaskStatus, {TaskName}, {RequestId}) is Cancelled or Removed". The expression parser has several implementations which will help the overall instruction to evaluate to True/False.
           - Implementations of IExpressionParser
-              - AuxiliaryVerbParser: Gets the values present in-between 'or'. ex: alfredo or parmesan or mozzarella, returns: [alfredo, parmesan, mozzarella]
+              - AuxiliaryVerbParser: Gets the values present in-between 'or'. ex: alfredo or parmesan or mozzarella, returns: [alfredo, parmesan, mozzarella]    
               - TasksMacroParamsExpressionParser
               - MacroParamsExpressionParser
               - MacroExpressionParser
