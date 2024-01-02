@@ -266,6 +266,7 @@ namespace ExpressionEngine
                 int lastIndexOfSpace = firstValue.LastIndexOf(" ");
                 firstValue = firstValue.Substring(lastIndexOfSpace, firstValue.Length - lastIndexOfSpace);
                 splitValues[0] = firstValue.Trim();
+
                 return new Response<string[]>(ResponseCode.Success, splitValues);
             }
             catch (Exception ex)

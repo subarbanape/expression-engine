@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
+      "projectUniqueName": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
       "projectName": "Common.Infrastructure",
-      "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
+      "projectPath": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\vinayaka.amaresh\\.nuget\\packages\\",
-      "outputPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\obj\\",
+      "outputPath": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vinayaka.amaresh\\AppData\\Roaming\\NuGet\\NuGet.Config",

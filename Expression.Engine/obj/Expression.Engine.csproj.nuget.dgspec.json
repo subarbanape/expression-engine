@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\vinu\\personal\\github\\expression-engine\\Expression.Engine\\Expression.Engine.csproj": {}
+    "C:\\vinu\\projects\\expression-engine\\Expression.Engine\\Expression.Engine.csproj": {}
   },
   "projects": {
-    "C:\\vinu\\personal\\github\\expression-engine\\Common.Helper\\Common.Helper.csproj": {
+    "C:\\vinu\\projects\\expression-engine\\Common.Helper\\Common.Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\vinu\\personal\\github\\expression-engine\\Common.Helper\\Common.Helper.csproj",
+        "projectUniqueName": "C:\\vinu\\projects\\expression-engine\\Common.Helper\\Common.Helper.csproj",
         "projectName": "Common.Helper",
-        "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Helper\\Common.Helper.csproj",
+        "projectPath": "C:\\vinu\\projects\\expression-engine\\Common.Helper\\Common.Helper.csproj",
         "packagesPath": "C:\\Users\\vinayaka.amaresh\\.nuget\\packages\\",
-        "outputPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Helper\\obj\\",
+        "outputPath": "C:\\vinu\\projects\\expression-engine\\Common.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinayaka.amaresh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj": {
-                "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj"
+              "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj": {
+                "projectPath": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj": {
+    "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
+        "projectUniqueName": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
         "projectName": "Common.Infrastructure",
-        "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
+        "projectPath": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\vinayaka.amaresh\\.nuget\\packages\\",
-        "outputPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\obj\\",
+        "outputPath": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinayaka.amaresh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\vinu\\personal\\github\\expression-engine\\Expression.Engine\\Expression.Engine.csproj": {
+    "C:\\vinu\\projects\\expression-engine\\Expression.Engine\\Expression.Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\vinu\\personal\\github\\expression-engine\\Expression.Engine\\Expression.Engine.csproj",
+        "projectUniqueName": "C:\\vinu\\projects\\expression-engine\\Expression.Engine\\Expression.Engine.csproj",
         "projectName": "Expression.Engine",
-        "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Expression.Engine\\Expression.Engine.csproj",
+        "projectPath": "C:\\vinu\\projects\\expression-engine\\Expression.Engine\\Expression.Engine.csproj",
         "packagesPath": "C:\\Users\\vinayaka.amaresh\\.nuget\\packages\\",
-        "outputPath": "C:\\vinu\\personal\\github\\expression-engine\\Expression.Engine\\obj\\",
+        "outputPath": "C:\\vinu\\projects\\expression-engine\\Expression.Engine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinayaka.amaresh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,11 +162,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\vinu\\personal\\github\\expression-engine\\Common.Helper\\Common.Helper.csproj": {
-                "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Helper\\Common.Helper.csproj"
+              "C:\\vinu\\projects\\expression-engine\\Common.Helper\\Common.Helper.csproj": {
+                "projectPath": "C:\\vinu\\projects\\expression-engine\\Common.Helper\\Common.Helper.csproj"
               },
-              "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj": {
-                "projectPath": "C:\\vinu\\personal\\github\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj"
+              "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj": {
+                "projectPath": "C:\\vinu\\projects\\expression-engine\\Common.Infrastructure\\Common.Infrastructure.csproj"
               }
             }
           }

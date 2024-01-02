@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Infrastructure", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expression.Engine", "Expression.Engine\Expression.Engine.csproj", "{6511DDD7-600F-4439-B732-EA2059A089DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Test", "Console.Test\Console.Test.csproj", "{AE4553DA-9C1F-4F7E-9FD3-9FD4BFBE6D32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6511DDD7-600F-4439-B732-EA2059A089DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6511DDD7-600F-4439-B732-EA2059A089DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6511DDD7-600F-4439-B732-EA2059A089DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4553DA-9C1F-4F7E-9FD3-9FD4BFBE6D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4553DA-9C1F-4F7E-9FD3-9FD4BFBE6D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4553DA-9C1F-4F7E-9FD3-9FD4BFBE6D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4553DA-9C1F-4F7E-9FD3-9FD4BFBE6D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

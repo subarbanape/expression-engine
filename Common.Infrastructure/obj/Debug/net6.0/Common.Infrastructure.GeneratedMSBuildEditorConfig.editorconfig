@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Common.Infrastructure
-build_property.ProjectDir = C:\vinu\personal\github\expression-engine\Common.Infrastructure\
+build_property.ProjectDir = C:\vinu\projects\expression-engine\Common.Infrastructure\
