@@ -14,6 +14,8 @@ The Expression Engine is made of the following
 
 Interfaces and its implementations:
 1. IExpression
+    - one of the core elements that makes criteria and expression. for any expression to execute, criteria needs to be evaluated to True.
+    - most of the time, an expression is made of expression tree/chain. each expression is passed to expression interpreter to evaulate the expression.
     - interface members, methods
         - Evaluate: Takes IExpressionInterpreter & IActionParams. Returns evaluated expression.
         - ExpressionResult: Result of this expression.
@@ -30,15 +32,32 @@ Interfaces and its implementations:
         - MultiCriteria
         - MultiExpression
         - SimpleExpression  
-2. ICriteria
+3. ICriteria
     - TargetCriteria: Criteria to evaluate. Of type string.
     - Evaluate: Takes IExpressionInterpreter & IActionParams. Returns evaluated expression.
-3. IMacro
+4. IMacro
     - Name: Macro Name
     - Params: Dictionary of workflow contextual information such as Task Name, Process Name, Task Created Date, User, etc.
     - MacroExpression: Passed in macro expression in raw string. The macro can be inside criteria, expression or anything. Its just a way to get the information from the process/task such as passed in task status, process status, etc.
 
 Runnable modules that uses above interfaces:
-1. ExpressionBuilder
-2. ExpressionInterpreter
-3. MacroProcessor
+1. MacroProcessor
+   - The low level module which interacts with AgilePoint via Data Manager.
+   - Brings back requested information such as Task Status, Task Duration, Open Tasks etc.
+   - Just one and only implementation of IMacroProcessor
+2. ExpressionBuilder
+    - Extension to prepare a syntactic expression chain for actions.
+    - Check out my program.cs to see how I use this to build a sample expression chain for the demo.
+4. ExpressionInterpreter
+    - Just one and only implementation of IExpressionInterpreter
+    - Has 2 methods. Both are Interpret.
+    - One of them takes IExpression as the param. And the other takes ICriteria as the param.
+    - It has further implemetations of helper module IExpressionParser.
+          - IExpressionParser further parses the instructions/conditions and helps decide to evaluate the overall instruction.
+          - ex: "MACRO(GetTaskStatus, {TaskName}, {RequestId}) is Cancelled or Removed". The expression parser has several implementations which will help the overall instruction to evaluate to True/False.
+          - Implementations of IExpressionParser
+              - AuxiliaryVerbParser: Gets the values present in-between 'or'. ex: alfredo or parmesan or mozzarella, returns: [alfredo, parmesan, mozzarella]
+              - TasksMacroParamsExpressionParser
+              - MacroParamsExpressionParser
+              - MacroExpressionParser
+              - ValuesToCompareExpressionParser: 
